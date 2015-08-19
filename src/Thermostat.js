@@ -4,6 +4,7 @@ var Thermostat = function(){
   this.defaultMaxTemp = 32;
   this.powerSaveMaxTemp = 25;
   this.defaultMinTemp = 10;
+  this.tempColor = "yellow"
 };
 
 Thermostat.prototype.raise = function(){
@@ -16,12 +17,14 @@ Thermostat.prototype.raise = function(){
       this.temperature++;
     }
   }
+  this.changeColor();
 };
 
 Thermostat.prototype.lower = function(){
   if(this.temperature > this.defaultMinTemp) {
     this.temperature--;
   }
+  this.changeColor();
 };
 
 Thermostat.prototype.powerSaveOff = function(){
@@ -34,4 +37,17 @@ Thermostat.prototype.powerSaveOn = function(){
 
 Thermostat.prototype.resetTemp = function() {
   this.temperature = 20;
+  this.tempColor ="yellow";
+};
+
+Thermostat.prototype.changeColor = function(){
+  if(this.temperature > 24){
+    this.tempColor ="red";
+  }
+  if(this.temperature < 25){
+    this.tempColor ="yellow";
+  }
+  if(this.temperature < 18){
+    this.tempColor ="green";
+  }
 };

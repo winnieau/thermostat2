@@ -67,5 +67,23 @@ describe('Thermostat', function(){
       thermostat.resetTemp();
       expect(thermostat.temperature).toBe(20);
     });
+
+    it('default color is yellow', function() {
+      expect(thermostat.tempColor).toBe("yellow");
+    });
+
+    it('should display green if temp < 18', function() {
+      for (i=0; i < 3; i++) {
+        thermostat.lower();
+      };
+      expect(thermostat.tempColor).toBe("green");
+    });
+
+    it('should display red if temp > 24', function() {
+      for (i=0; i < 5; i++) {
+        thermostat.raise();
+      };
+      expect(thermostat.tempColor).toBe("red");
+    });
   });
 });
