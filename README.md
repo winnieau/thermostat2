@@ -15,8 +15,8 @@ Create a simple digital thermostat, using JavaScript, test-driven with Jasmine a
   * The thermostat should colour the display based on energy usage - < 18
   * is green, < 25 is yellow, otherwise red
 
-### User stories
-
+ User stories
+```
 as a thermostat user i would like to see the current temperature setting.
 as a user i would like to see an increase button.
 as a user i would like to see a decrease button.
@@ -28,3 +28,4 @@ as a user i would like to decrease the temperature.
 as a user i would like to reset the temperature setting.
 as a user i would like to be able to set on/off the power saving mode.
 as a user i would like to see colored ui background based on energy usage.
+```
