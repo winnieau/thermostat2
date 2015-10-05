@@ -17,15 +17,25 @@ Create a simple digital thermostat, using JavaScript, test-driven with Jasmine a
 
  User stories
 ```
-as a thermostat user i would like to see the current temperature setting.
-as a user i would like to see an increase button.
-as a user i would like to see a decrease button.
-as a user i would like to see a reset button.
-as a user i would like to see a power saving mode button.
-as a user i would like to see a power saving mode indicator.
-as a user i would like to increase the temperature.
-as a user i would like to decrease the temperature.
-as a user i would like to reset the temperature setting.
-as a user i would like to be able to set on/off the power saving mode.
-as a user i would like to see colored ui background based on energy usage.
+As a thermostat user i would like to see the current temperature setting.
+
+As a user i would like to see an increase button.
+
+As a user i would like to see a decrease button.
+
+As a user i would like to see a reset button.
+
+As a user i would like to see a power saving mode button.
+
+As a user i would like to see a power saving mode indicator.
+
+As a user i would like to increase the temperature.
+
+As a user i would like to decrease the temperature.
+
+As a user i would like to reset the temperature setting.
+
+As a user i would like to be able to set on/off the power saving mode.
+
+As a user i would like to see colored ui background based on energy usage.
 ```
